@@ -50,3 +50,5 @@ card.style.display = "none";
 });
 
 }
+document.getElementById("anio").textContent =
+new Date().getFullYear();

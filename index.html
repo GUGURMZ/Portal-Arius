@@ -1,212 +1,220 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Arius Inmobiliaria - Corrientes</title>
-<link rel="icon" href="imagenes/favicon.png">
-<link rel="stylesheet" href="css/style.css">
-<meta name="description" content="Arius Inmobiliaria en Corrientes Capital. Alquileres y ventas de departamentos y casas.">
-<meta name="keywords" content="inmobiliaria corrientes, alquiler corrientes, departamentos corrientes">
-<meta name="author" content="Gustavo A. Ramírez">
-<meta property="og:title" content="Arius Inmobiliaria Corrientes">
-<meta property="og:description" content="Alquileres y ventas en Corrientes Capital">
-<meta property="og:type" content="website">
-<meta property="og:image"content="imagenes/logo.png">
-<meta name="robots" content="index,follow">
-<meta name="geo.region" content="AR-W">
-<meta name="geo.placename"
-content="Corrientes Capital">
-<meta property="og:url"
-content="https://ariusagencia.netlify.app">
-<meta name="language" content="Spanish">
-<meta name="geo.position"
-content="-27.4692;-58.8306">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arius Inmobiliaria - Corrientes</title>
+  <link rel="icon" href="imagenes/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description"
+    content="Arius Inmobiliaria en Corrientes Capital. Alquileres y ventas de departamentos y casas.">
+  <meta name="keywords" content="inmobiliaria corrientes, alquiler corrientes, departamentos corrientes">
+  <meta name="author" content="Gustavo A. Ramírez">
+  <meta property="og:title" content="Arius Inmobiliaria Corrientes">
+  <meta property="og:description" content="Alquileres y ventas en Corrientes Capital">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://ariusagencia.netlify.app/imagenes/logo1.png">
+  <meta name="robots" content="index,follow">
+  <meta name="geo.region" content="AR-W">
+  <meta name="geo.placename" content="Corrientes Capital">
+  <meta property="og:url" content="https://ariusagencia.netlify.app">
+  <link rel="canonical" href="https://ariusagencia.netlify.app">
+  <meta name="language" content="Spanish">
+  <meta name="geo.position" content="-27.4692;-58.8306">
 </head>
 
 <body>
   <header class="header">
-   <div class="logo">
-   <img src="imagenes/logo1.png"
-   alt="Arius Inmobiliaria">
-   </div>
-
-<nav class="navbar">
- <a href="#inicio">Inicio</a>
- <a href="#propiedades">Propiedades</a>
- <a href="#contacto">Contacto</a>
-</nav>
-</header>
-  <section class="hero" id="inicio">
-  <h1>Alquileres y Ventas en Corrientes</h1>
-  <section class="info-bar">
-
-<p>
-🏠 Atención personalizada en alquileres,
-ventas y administración de propiedades.
-</p>
- </section>
-<p>
-Encontrá departamentos, casas y propiedades con Arius Inmobiliaria.
-</p>
-
- <button onclick="scrollToProperties()">
-Ver propiedades
- </button>
-</section>
-
-<section id="nosotros">
-<h2>Sobre Arius Inmobiliaria</h2>
-<p>
-Arius Inmobiliaria brinda servicios de alquiler,
-venta y administración de propiedades en
-Corrientes Capital, ofreciendo atención
-personalizada y asesoramiento profesional.
-</p>
-</section>
-
-<div class="search">
-
-<select id="operacion">
-
-<option value="todos">Operación</option>
-<option value="alquiler">Alquiler</option>
-<option value="venta">Venta</option>
-
-</select>
-
-<select id="tipo">
- <option value="todos">Tipo</option>
- <option value="departamento">Departamento</option>
- <option value="casa">Casa</option>
-
-</select>
-
-<button onclick="filtrarPropiedades()">
-  Buscar
-</button>
-</div>
-<h2 class="titulo-seccion">
-🏠 Propiedades Disponibles
-</h2>
-<div class="container" id="propiedades">
-   <!-- CAMBÁ CUÁ --> 
-    <div class="card destacada" 
-    data-operacion="alquiler" 
-    data-tipo="departamento"> 
-    <div class="badge disponible"> 
-      ⭐ DESTACADA 
+    <div class="logo">
+      <img src="imagenes/logo1.png" alt="Arius Inmobiliaria">
     </div>
-    <img src="imagenes/cambacua1.jpg" alt="Departamento Cambá Cuá">
-      <div class="price">$1.250.000</div>
+
+    <nav class="navbar">
+      <a href="#inicio">Inicio</a>
+      <a href="#propiedades">Propiedades</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+  <section class="hero" id="inicio">
+    <h1>Alquileres y Ventas en Corrientes</h1>
+    <section class="info-bar">
+
+      <p> 🏠 Atención personalizada en alquileres,
+        ventas y administración de propiedades.
+      </p>
+    </section>
+    <p>
+      Encontrá departamentos, casas y propiedades con Arius Inmobiliaria.
+    </p>
+
+    <button onclick="scrollToProperties()">
+      Ver propiedades
+    </button>
+  </section>
+
+  <section id="nosotros">
+    <h2>Sobre Arius Inmobiliaria</h2>
+    <p>
+      Arius Inmobiliaria brinda servicios de alquiler,
+      venta y administración de propiedades en
+      Corrientes Capital, ofreciendo atención
+      personalizada y asesoramiento profesional.
+    </p>
+  </section>
+
+  <div class="search">
+
+    <select id="operacion">
+
+      <option value="todos">Operación</option>
+      <option value="alquiler">Alquiler</option>
+      <option value="venta">Venta</option>
+
+    </select>
+
+    <select id="tipo">
+      <option value="todos">Tipo</option>
+      <option value="departamento">Departamento</option>
+      <option value="casa">Casa</option>
+
+    </select>
+
+    <button onclick="filtrarPropiedades()">
+      Buscar
+    </button>
+  </div>
+  <h2 class="titulo-seccion">
+    🏠 Propiedades Disponibles
+  </h2>
+  <div class="container" id="propiedades">
+    <!-- CAMBÁ CUÁ -->
+    <div class="card destacada" data-operacion="alquiler" data-tipo="departamento">
+      <div class="badge destacada">
+        ⭐ PREMIUM
+      </div>
+      <img src="imagenes/cambacua1.jpg" alt="Departamento Cambá Cuá">
+      <div class="price">$1.250.000 </div>
       <h3>Departamento Premium 2 Dormitorios</h3>
-       <p>📍 Cambá Cuá - Vista al Río</p>
-        <p>🛏️ 2 dormitorios</p>
-        <p>🏊 Piscina</p> 
-        <p>🌇 Terraza común</p>
-        <button onclick="window.location.href='paginas/depto-camba-cua.html'"> 
-          Ver detalle
-         </button>
+      <p>📍 Cambá Cuá - Vista al Río</p>
+      <p>🛏️ 2 dormitorios</p>
+      <p>🏊 Piscina</p>
+      <p>🌇 Terraza común</p>
+      <button onclick="window.location.href='paginas/depto-camba-cua.html'">
+        Ver detalle
+      </button>
+    </div>
+
+    <!-- RÍO JURAMENTO -->
+    <div class="card reservada" data-operacion="alquiler" data-tipo="departamento">
+      <img src="imagenes/riojuramento1.jpg" alt="Río Juramento">
+      <div class="price"> RESERVADO </div>
+      <div class="badge reservado">
+        RESERVADO
+
+      </div>
+      <h3>Departamento Río Juramento</h3>
+      <p>
+        📍 Río Juramento - Corrientes
+      </p>
+      <p>🛏️ 1 dormitorio </p>
+      <button onclick="window.location.href='paginas/detalle.html'">
+        Ver detalle
+      </button>
+    </div>
+
+
+    <!-- HÉROES CIVILES -->
+    <div class="card" data-operacion="alquiler" data-tipo="departamento">
+      <img src="imagenes/heroesciviles1.jpg" alt="Héroes Civiles">
+      <div class="price">$500.000
       </div>
 
-        <!-- RÍO JURAMENTO --> 
-         <div class="card reservada" 
-         data-operacion="alquiler" data-tipo="departamento"> 
-          <img src="imagenes/riojuramento1.jpg" alt="Río Juramento"> 
-          <div class="price">RESERVADO</div> 
-          <div class="badge reservado"> 
-            RESERVADO 
-
-          </div> 
-          <h3>Departamento Río Juramento</h3> 
-          <p>
-             📍 Río Juramento - Corrientes
-          </p>
-          <p>🛏️ 1 dormitorio </p> 
-          <button onclick="window.location.href='paginas/detalle.html'"> 
-            Ver detalle 
-          </button> 
-        </div>
-
-
-      <!-- HÉROES CIVILES --> 
-       <div class="card"
-       data-operacion="alquiler" 
-       data-tipo="departamento">
-       <img src="imagenes/heroesciviles1.jpg" alt="Héroes Civiles">
-         <div class="price">$500.000 </div>
-            
-         <div class="badge disponible"> 
-          DISPONIBLE 
-        </div>
-        <h3>Departamento en alquiler</h3> 
-        <p>📍 Héroes Civiles 2200 - Corrientes</p>
-        <p>🛏️ 1 dormitorio</p>
-        <button onclick="window.location.href='paginas/depto-heroes-civiles.html'"> 
-          Ver detalle 
-        </button> 
+      <div class="badge disponible">
+        DISPONIBLE
       </div>
-        </div>
+      <h3>Departamento en alquiler</h3>
+      <p>📍 Héroes Civiles 2200 - Corrientes</p>
+      <p>🛏️ 1 dormitorio</p>
+      <button onclick="window.location.href='paginas/depto-heroes-civiles.html'">
+        Ver detalle
+      </button>
+    </div>
+  </div>
 
-<a class="whatsapp"
-href="https://wa.me/543794886390"
-target="_blank">
-💬
-</a>
+  <a class="whatsapp" href="https://wa.me/543794886390" target="_blank">
+    💬
+  </a>
 
-<footer class="footer" id="contacto">
+  <footer class="footer" id="contacto">
 
-<div class="footer-grid">
+    <div class="footer-grid">
 
-<div>
-<h3>Arius Inmobiliaria</h3>
-<p>Corrientes Capital</p>
-<p>🏠 Alquileres, ventas y administración.</p>
-</div>
+      <div>
 
-<div>
-<h3>Contacto</h3>
-<p>📞 3794886390</p>
-<p>📍 Corrientes, Argentina</p>
+        <h3>Arius Inmobiliaria</h3>
+        <p>Corrientes Capital</p>
+        <p>🏠 Alquileres, ventas y administración.</p>
+        <p>📍 José María Rolón 1957 - P.B </p>
 
-<p>
-<a href="https://maps.app.goo.gl/x9Upv8zVDrqHpLnz6"
-target="_blank">
-📍 Ver ubicación en Google Maps
-</a>
-</p>
-</div>
+      </div>
 
-<div>
-<h3>Horario Comercial</h3>
+      <div>
+        <h3>Contacto</h3>
+        <p>
+          📞
+          <a href="tel:+543794159802">
+            3794159802
+          </a>
+        </p>
 
-<p>
-Lunes a Viernes<br>
-9:00 a 13:00 hs<br>
-17:30 a 20:30 hs
-</p>
+        <p>
+          📞
+          <a href="tel:+543794886390">
+            3794886390
+          </a>
+        </p>
+        <p> ✉️ Próximamente disponible </p>
+        <p>
+          <a href="https://instagram.com/inmobiliaria.arius" target="_blank">
+            📸 Instagram: @inmobiliaria.arius
+          </a>
+        </p>
 
-<p>
-Sábados<br>
-9:00 a 13:00 hs
-</p>
-</div>
+        <p>
+          <a href="https://maps.app.goo.gl/x9Upv8zVDrqHpLnz6" target="_blank">
+            📍 Ver ubicación en Google Maps
+          </a>
+        </p>
+      </div>
 
-</div>
+      <div>
+        <h3>Horario Comercial</h3>
 
-</footer>
+        <p>
+          Lunes a Viernes<br>
+          9:00 a 13:00 hs<br>
+          17:30 a 20:30 hs
+        </p>
 
- <a class="instagram"
-href="https://instagram.com/inmobiliaria.arius"
-target="_blank">
-📸
- </a>
+        <p>
+          Sábados<br>
+          9:00 a 13:00 hs
+        </p>
+      </div>
+    </div>
+  </footer>
 
-<div class="copyright">
-© 2026 Arius Inmobiliaria - Todos los derechos reservados.
-<br>
-Desarrollado por Gustavo A. Ramírez
-</div>
-<script src="js/script.js"></script>
-  </body>
+  <a class="instagram" href="https://instagram.com/inmobiliaria.arius" target="_blank">
+    📸
+  </a>
+
+  <div class="copyright">
+    © <span id="anio"></span> Arius Inmobiliaria - Todos los derechos reservados.
+    <br>
+    Desarrollado por Gustavo A. Ramírez
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
