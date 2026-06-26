@@ -1,10 +1,13 @@
 body {
-font-family: Arial;
+font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
 margin: 0;
 background: #0b1a2a;
 color: white;
 scroll-behavior:smooth;
 }
+/*=========================
+ HEADER
+=========================*/
 
 .header{
 display:flex;
@@ -51,7 +54,6 @@ box-shadow:0px 4px 10px rgba(0,0,0,0.3);
 .container{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-grid-template-columns:1fr;
 gap:20px;
 padding:20px;
 align-items:stretch;
@@ -67,11 +69,6 @@ border-radius:10px;
 .card:hover{
 transform:translateY(-8px);
 box-shadow:0px 10px 25px rgba(0,0,0,0.5);
-}
-
-.card img {
-width: 100%;
-border-radius: 10px;
 }
 
 .price {
@@ -183,10 +180,6 @@ padding:40px 20px;
 margin-top:50px;
 position:relative;
 z-index:1;
-}
-
-.footer h3{
-color:#8b5a2b;
 }
 
 .footer p{
@@ -306,11 +299,6 @@ position:absolute;
 top:15px;
 right:15px;
 }
-.footer a{
-color:#d4a373;
-text-decoration:none;
-font-weight:bold;
-}
 
 .footer a:hover{
 color:#ffffff;
@@ -375,8 +363,8 @@ color:#d4a373;
 .footer a{
 color:#d4a373;
 text-decoration:none;
+font-weight:bold;
 }
-
 .footer a:hover{
 color:white;
 }
