@@ -1,7 +1,16 @@
+:root{
+
+--azul:#0b1a2a;
+--azul-sec:#12263a;
+--dorado:#8b5a2b;
+--dorado-hover:#a76b35;
+--texto:#ffffff;
+}
+
 body {
 font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
 margin: 0;
-background: #0b1a2a;
+background:var(--azul);
 color: white;
 scroll-behavior:smooth;
 }
@@ -64,7 +73,9 @@ width:100%;
 height:220px;
 object-fit:cover;
 border-radius:10px;
+transition:0.4s;
 }
+
 
 .card:hover{
 transform:translateY(-8px);
@@ -141,11 +152,6 @@ background:#1d3550;
 color:#8b5a2b;
 }
 
-.hero p{
-font-size:20px;
-margin-bottom:20px;
-}
-
 .card{
 background:#12263a;
 margin-bottom:20px;
@@ -182,9 +188,6 @@ position:relative;
 z-index:1;
 }
 
-.footer p{
-color:#d8d8d8;
-}
 header{
 position:sticky;
 top:0;
@@ -229,9 +232,6 @@ background:#06101b;
 color:#b8b8b8;
 font-size:14px;
 border-top:1px solid #1d3550;
-}
-.card img{
-transition:0.4s;
 }
 
 .card:hover img{
@@ -301,7 +301,8 @@ right:15px;
 }
 
 .footer a:hover{
-color:#ffffff;
+color:#d8d8d8;
+
 }
 .instagram{
 position:fixed;
