@@ -7,7 +7,7 @@
   <title>
    Arius Inmobiliaria | Alquileres, Ventas y Administración de Propiedades en Corrientes
   </title>
-  <link rel="icon" href="imagenes/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="imagenes/favicon.png">
   <link rel="stylesheet" href="css/style.css">
   <meta name="description" content="Arius Inmobiliaria en Corrientes Capital. Alquileres y ventas de departamentos y casas.">
   <meta name="keywords" content="inmobiliaria corrientes, alquiler corrientes, departamentos corrientes">
@@ -16,6 +16,8 @@
   <meta property="og:description" content="Alquileres y ventas en Corrientes Capital">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://agenciaarius.com.ar/imagenes/logo1.png">
+  <meta property="og:site_name" content="Arius Inmobiliaria">
+  <meta property="og:locale" content="es_AR">
   <meta name="robots" content="index,follow">
   <meta name="geo.region" content="AR-W">
   <meta name="geo.placename" content="Corrientes Capital">
@@ -27,21 +29,27 @@
   <link rel="apple-touch-icon" href="imagenes/logo1.png">
 </head>
 
-<body>
+<body class="home">
   <header class="header">
-    <div class="logo">
-    <a href="index.html">
-    <img src="imagenes/logo1.png"
-         alt="Arius Inmobiliaria">
+
+    <a href="index.html" class="logo">
+        <img src="imagenes/logo1.png" alt="Logo Arius Inmobiliaria">
     </a>
-    </div>
 
     <nav class="navbar">
-      <a href="#inicio">Inicio</a>
-      <a href="#propiedades">Propiedades</a>
-      <a href="#contacto">Contacto</a>
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#propiedades">Propiedades</a>
+        <a href="#contacto">Contacto</a>
     </nav>
-  </header>
+
+    <a href="https://wa.me/543794886390"
+       class="btn-header"
+       target="_blank">
+       📞 Contactar
+    </a>
+
+</header>
   <section class="hero" id="inicio">
     <h1>Alquileres y Ventas en Corrientes</h1>
     <section class="info-bar">
@@ -131,7 +139,8 @@
 
     <!-- HÉROES CIVILES -->
     <div class="card" data-operacion="alquiler" data-tipo="departamento">
-      <img src="imagenes/heroesciviles1.jpg" alt="Departamento de un dormitorio en Héroes Civiles Corrientes"">
+      <img 
+         src="imagenes/heroesciviles1.jpg" alt="Departamento de un dormitorio en Héroes Civiles Corrientes">
       <div class="price">$500.000
       </div>
 
