@@ -667,5 +667,183 @@ select {
   .titulo-seccion {
     font-size: 28px;
   }
+}
 
+/* =========================
+   FORMULARIO PUBLICAR PROPIEDAD
+========================= */
+
+.formulario-propiedad {
+  max-width: 750px;
+  margin: 40px auto;
+  padding: 30px;
+  background: var(--azul-sec);
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.formulario-propiedad label {
+  display: block;
+  margin: 15px 5px 5px;
+  font-weight: 600;
+}
+
+.formulario-propiedad input,
+.formulario-propiedad select,
+.formulario-propiedad textarea {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 5px 0 15px;
+  padding: 13px;
+  border: 1px solid #38516a;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #172536;
+  font: inherit;
+}
+
+.formulario-propiedad textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.formulario-propiedad button {
+  width: 100%;
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .formulario-propiedad {
+    margin: 25px 15px;
+    padding: 20px;
+  }
+}
+/* =========================
+   BENEFICIOS ARIUS
+========================= */
+
+.beneficios {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.beneficios h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.beneficios-intro {
+  color: #d8d8d8;
+  margin-bottom: 35px;
+  line-height: 1.7;
+}
+
+.beneficios-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.beneficio-card {
+  background: var(--azul-sec);
+  padding: 30px 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(212, 163, 115, 0.25);
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.25);
+  transition: 0.3s ease;
+}
+
+.beneficio-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--dorado-hover);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.beneficio-icono {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.beneficio-card h3 {
+  color: #d4a373;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.beneficio-card p {
+  color: #d8d8d8;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+@media (max-width: 900px) {
+  .beneficios-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .beneficios-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .beneficios h2 {
+    font-size: 26px;
+  }
+}
+/* =========================
+   PRESENTACIÓN PÁGINA PROPIETARIOS
+========================= */
+
+.pagina-hero {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 65px 20px 25px;
+  text-align: center;
+}
+
+.pagina-hero h1 {
+  font-size: 38px;
+  margin-bottom: 18px;
+}
+
+.pagina-hero p {
+  color: #d8d8d8;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.captacion {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.captacion h2,
+.captacion > p {
+  text-align: center;
+}
+
+.captacion h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.captacion > p {
+  color: #d8d8d8;
+  margin-bottom: 25px;
+}
+@media (max-width: 768px) {
+  .pagina-hero {
+    padding: 45px 20px 20px;
+  }
+  .pagina-hero h1 {
+    font-size: 29px;
+  }
+ .captacion h2 {
+    font-size: 24px;
+  }
 }

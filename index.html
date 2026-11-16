@@ -2,254 +2,251 @@
 <html lang="es-AR">
 
 <head>
+
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>
-   Arius Inmobiliaria | Alquileres, Ventas y Administración de Propiedades en Corrientes
-  </title>
-  <link rel="icon" type="image/png" sizes="32x32" href="imagenes/favicon.png">
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="Arius Inmobiliaria en Corrientes Capital. Alquileres y ventas de departamentos y casas.">
-  <meta name="keywords" content="inmobiliaria corrientes, alquiler corrientes, departamentos corrientes">
-  <meta name="author" content="Gustavo A. Ramírez">
-  <meta property="og:title" content="Arius Inmobiliaria Corrientes">
-  <meta property="og:description" content="Alquileres y ventas en Corrientes Capital">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://agenciaarius.com.ar/imagenes/logo1.png">
-  <meta property="og:site_name" content="Arius Inmobiliaria">
-  <meta property="og:locale" content="es_AR">
-  <meta name="robots" content="index,follow">
-  <meta name="geo.region" content="AR-W">
-  <meta name="geo.placename" content="Corrientes Capital">
-  <meta property="og:url" content="https://agenciaarius.com.ar">
-  <link rel="canonical" href="https://agenciaarius.com.ar">
-  <meta name="language" content="Spanish">
-  <meta name="geo.position" content="-27.4692;-58.8306">
-  <meta name="theme-color" content="#0b1a2a">
-  <link rel="apple-touch-icon" href="imagenes/logo1.png">
+
+  <title>Publicá tu propiedad | Arius Inmobiliaria Corrientes</title>
+
+  <meta
+    name="description"
+    content="¿Tenés una propiedad para alquilar o vender en Corrientes? Contactá a Arius Inmobiliaria y recibí asesoramiento personalizado."
+  >
+
+  <link rel="icon" type="image/png" href="../imagenes/favicon.png">
+
+  <link rel="stylesheet" href="../css/style.css">
+
 </head>
 
-<body class="home">
-  <header class="header">
+<body>
 
-    <a href="index.html" class="logo">
-        <img src="imagenes/logo1.png" alt="Logo Arius Inmobiliaria">
+<header class="header">
+
+  <a href="../index.html" class="logo">
+    <img
+      src="../imagenes/logo1.png"
+      alt="Arius Inmobiliaria"
+    >
+  </a>
+
+  <nav class="navbar">
+
+    <a href="../index.html">Inicio</a>
+    <a href="alquileres.html">Alquileres</a>
+    <a href="ventas.html">Ventas</a>
+    <a href="administracion.html">Administración</a>
+    <a href="nosotros.html">Quiénes somos</a>
+    <a href="publicar-propiedad.html" class="btn-propietario">
+      📢 Publicá tu propiedad
     </a>
+    <a href="contacto.html">Contacto</a>
 
-    <nav class="navbar">
-        <a href="#inicio">Inicio</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#propiedades">Propiedades</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
-
-    <a href="https://wa.me/543794886390"
-       class="btn-header"
-       target="_blank">
-       📞 Contactar
-    </a>
+  </nav>
 
 </header>
-  <section class="hero" id="inicio">
-    <h1>Alquileres y Ventas en Corrientes</h1>
-    <section class="info-bar">
-      <p> 🏠 Atención personalizada en alquileres,
-        ventas y administración de propiedades.
-      </p>
-    </section>
+
+
+<main>
+
+  <section class="pagina-hero">
+
+    <h1>¿Tenés una propiedad para alquilar o vender?</h1>
+
     <p>
-      Encontrá departamentos, casas y propiedades con Arius Inmobiliaria.
+      En Arius Inmobiliaria te ayudamos a encontrar
+      interesados y gestionar tu propiedad.
     </p>
 
-    <button onclick="scrollToProperties()">
-      Ver propiedades
-    </button>
   </section>
 
-  <section id="nosotros">
-    <h2>Sobre Arius Inmobiliaria</h2>
+
+  <section class="captacion">
+
+    <h2>📢 Ofrecé tu propiedad</h2>
+
     <p>
-      Arius Inmobiliaria brinda servicios de alquiler,
-      venta y administración de propiedades en
-      Corrientes Capital, ofreciendo atención
-      personalizada y asesoramiento profesional.
+      Completá el siguiente formulario y nos pondremos
+      en contacto con vos.
     </p>
-  </section>
 
-  <div class="search">
 
-    <select id="operacion">
+    <form id="formPropietario" class="formulario-propiedad">
 
-      <option value="todos">Operación</option>
-      <option value="alquiler">Alquiler</option>
-      <option value="venta">Venta</option>
+      <label for="nombre">
+        Nombre y apellido
+      </label>
 
-    </select>
+      <input
+        type="text"
+        id="nombre"
+        name="nombre"
+        required
+      >
 
-    <select id="tipo">
-      <option value="todos">Tipo</option>
-      <option value="departamento">Departamento</option>
-      <option value="casa">Casa</option>
 
-    </select>
+      <label for="telefono">
+        Teléfono / WhatsApp
+      </label>
 
-    <button onclick="filtrarPropiedades()">
-      Buscar
-    </button>
-  </div>
-  <h2 class="titulo-seccion">
-    🏠 Propiedades Disponibles
-  </h2>
-  <div class="container" id="propiedades">
-    <!-- CAMBÁ CUÁ -->
-    <div class="card destacada" data-operacion="alquiler" data-tipo="departamento">
-      <div class="badge destacada">
-        ⭐ PREMIUM
-      </div>
-      <img src="imagenes/cambacua1.jpg" alt="Departamento Cambá Cuá">
-      <div class="price">$1.250.000 </div>
-      <h3>Departamento Premium 2 Dormitorios</h3>
-      <p>📍 Cambá Cuá - Vista al Río</p>
-      <p>🛏️ 2 dormitorios</p>
-      <p>🏊 Piscina</p>
-      <p>🌇 Terraza común</p>
-      <button onclick="window.location.href='paginas/depto-camba-cua.html'">
-        Ver detalle
+      <input
+        type="tel"
+        id="telefono"
+        name="telefono"
+        required
+      >
+
+
+      <label for="operacion">
+        ¿Qué querés hacer?
+      </label>
+
+      <select id="operacion" name="operacion">
+
+        <option value="alquilar">
+          Alquilar
+        </option>
+
+        <option value="vender">
+          Vender
+        </option>
+
+        <option value="alquilar-vender">
+          Alquilar o vender
+        </option>
+
+      </select>
+
+
+      <label for="tipo">
+        Tipo de propiedad
+      </label>
+
+      <select id="tipo" name="tipo">
+
+        <option value="departamento">
+          Departamento
+        </option>
+
+        <option value="casa">
+          Casa
+        </option>
+
+        <option value="terreno">
+          Terreno
+        </option>
+
+        <option value="local">
+          Local comercial
+        </option>
+
+        <option value="otro">
+          Otro
+        </option>
+
+      </select>
+
+
+      <label for="ubicacion">
+        Zona / Dirección
+      </label>
+
+      <input
+        type="text"
+        id="ubicacion"
+        name="ubicacion"
+      >
+
+
+      <label for="mensaje">
+        Información adicional
+      </label>
+
+      <textarea
+        id="mensaje"
+        name="mensaje"
+        rows="5"
+        placeholder="Contanos brevemente sobre la propiedad..."
+      ></textarea>
+
+
+      <button type="submit">
+        📲 Enviar consulta
       </button>
-    </div>
 
-    <!-- RÍO JURAMENTO -->
-    <div class="card reservada" data-operacion="alquiler" data-tipo="departamento">
-      <img src="imagenes/riojuramento1.jpg" alt="Río Juramento">
-      <div class="price"> RESERVADO </div>
-      <div class="badge reservado">
-        RESERVADO
+    </form>
 
-      </div>
-      <h3>Departamento Río Juramento</h3>
+  </section>
+
+
+ <section class="beneficios">
+
+  <h2>¿Por qué ofrecer tu propiedad con Arius?</h2>
+
+  <p class="beneficios-intro">
+    Te acompañamos en cada etapa para que puedas
+    alquilar o vender tu propiedad con tranquilidad.
+  </p>
+
+  <div class="beneficios-grid">
+
+    <div class="beneficio-card">
+      <div class="beneficio-icono">📢</div>
+      <h3>Difusión</h3>
       <p>
-        📍 Río Juramento - Corrientes
+        Publicamos tu propiedad para llegar
+        a potenciales interesados.
       </p>
-      <p>🛏️ 1 dormitorio </p>
-      <button onclick="window.location.href='paginas/detalle.html'">
-        Ver detalle
-      </button>
     </div>
 
-
-    <!-- HÉROES CIVILES -->
-    <div class="card" data-operacion="alquiler" data-tipo="departamento">
-      <img 
-         src="imagenes/heroesciviles1.jpg" alt="Departamento de un dormitorio en Héroes Civiles Corrientes">
-      <div class="price">$500.000
-      </div>
-
-      <div class="badge disponible">
-        DISPONIBLE
-      </div>
-      <h3>Departamento en alquiler</h3>
-      <p>📍 Héroes Civiles 2200 - Corrientes</p>
-      <p>🛏️ 1 dormitorio</p>
-      <button onclick="window.location.href='paginas/depto-heroes-civiles.html'">
-        Ver detalle
-      </button>
+    <div class="beneficio-card">
+      <div class="beneficio-icono">🤝</div>
+      <h3>Atención personalizada</h3>
+      <p>
+        Te acompañamos durante todo el proceso,
+        brindándote asesoramiento.
+      </p>
     </div>
+
+    <div class="beneficio-card">
+      <div class="beneficio-icono">🏠</div>
+      <h3>Gestión de consultas</h3>
+      <p>
+        Atendemos las consultas de los interesados
+        y coordinamos las visitas.
+      </p>
+    </div>
+
+    <div class="beneficio-card">
+      <div class="beneficio-icono">🔑</div>
+      <h3>Administración</h3>
+      <p>
+        También podemos ayudarte con la
+        administración de tu propiedad.
+      </p>
+    </div>
+
   </div>
 
-  <a class="whatsapp" href="https://wa.me/543794886390" target="_blank">
-    💬
-  </a>
+</section>
 
-  <footer class="footer" id="contacto">
+</main>
 
-    <div class="footer-grid">
 
-      <div>
+<footer class="footer">
 
-        <h3>Arius Inmobiliaria</h3>
-        <p>Corrientes Capital</p>
-        <p>🏠 Alquileres, ventas y administración.</p>
-        <p>📍 José María Rolón 1957 - P.B </p>
+  <h3>Arius Inmobiliaria</h3>
 
-      </div>
+  <p>
+    Corrientes Capital
+  </p>
 
-      <div>
-        <h3>Contacto</h3>
-        <p>
-          📞
-          <a href="tel:+543794159802">
-            3794159802
-          </a>
-        </p>
+</footer>
 
-        <p>
-          📞
-          <a href="tel:+543794886390">
-            3794886390
-          </a>
-        </p>
-        <p>
-         ✉️
-        <a href="mailto:inmobiliariaarius@gmail.com">
-          inmobiliariaarius@gmail.com
-        </a>
-        </p>
-        <p>
-          <a href="https://instagram.com/inmobiliaria.arius" target="_blank">
-            📸 Instagram: @inmobiliaria.arius
-          </a>
-        </p>
 
-        <p>
-          <a href="https://maps.app.goo.gl/x9Upv8zVDrqHpLnz6" target="_blank">
-            📍 Ver ubicación en Google Maps
-          </a>
-        </p>
-      </div>
+<script src="../js/script.js"></script>
 
-      <div>
-        <h3>Horario Comercial</h3>
-
-        <p>
-          Lunes a Viernes<br>
-          9:00 a 13:00 hs<br>
-          17:30 a 20:30 hs
-        </p>
-
-        <p>
-          Sábados<br>
-          9:00 a 13:00 hs
-        </p>
-      </div>
-    </div>
-  </footer>
-
-  <a class="instagram" href="https://instagram.com/inmobiliaria.arius" target="_blank">
-    📸
-  </a>
-
-  <div class="copyright">
-    © <span id="anio"></span> Arius Inmobiliaria - Todos los derechos reservados.
-    <br>
-    Desarrollado por Gustavo A. Ramírez
-  </div>
-  <script src="js/script.js"></script>
-  <script type="application/ld+json">
-{
- "@context":"https://schema.org",
- "@type":"RealEstateAgent",
- "name":"Arius Inmobiliaria",
- "url":"https://agenciaarius.com.ar",
- "logo":"https://agenciaarius.com.ar/imagenes/logo1.png",
- "telephone":"+54 379 4886390",
- "address":{
-   "@type":"PostalAddress",
-   "streetAddress":"José María Rolón 1957",
-   "addressLocality":"Corrientes",
-   "addressCountry":"AR"
- }
-}
-</script>
 </body>
 
 </html>
