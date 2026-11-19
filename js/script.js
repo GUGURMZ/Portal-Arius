@@ -50,9 +50,11 @@ card.style.display = "none";
 });
 
 }
-document.getElementById("anio").textContent =
-new Date().getFullYear();
+const elementoAnio = document.getElementById("anio");
 
+if (elementoAnio) {
+  elementoAnio.textContent = new Date().getFullYear();
+}
 // ======================================
 // FORMULARIO PUBLICAR PROPIEDAD - ARIUS
 // ======================================
@@ -91,6 +93,47 @@ Consulta enviada desde agenciaarius.com.ar
 
     const url = "https://wa.me/" + numeroWhatsApp +
                 "?text=" + encodeURIComponent(consulta);
+
+    window.open(url, "_blank");
+
+  });
+
+}
+// FORMULARIO PUBLICAR PROPIEDAD
+
+const formularioPropietario = document.getElementById("formPropietario");
+
+if (formularioPropietario) {
+
+  formularioPropietario.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const nombre = document.getElementById("nombre").value.trim();
+    const telefono = document.getElementById("telefono").value.trim();
+    const operacion = document.getElementById("operacion").value;
+    const tipo = document.getElementById("tipo").value;
+    const ubicacion = document.getElementById("ubicacion").value.trim();
+    const mensaje = document.getElementById("mensaje").value.trim();
+
+    const texto = `
+CONSULTA - PUBLICAR PROPIEDAD
+----------------------------
+
+Nombre: ${nombre}
+Teléfono: ${telefono}
+Operación: ${operacion}
+Tipo de propiedad: ${tipo}
+Ubicación: ${ubicacion}
+
+Información adicional:
+${mensaje}
+`;
+
+    const numero = "543794886390";
+
+    const url = "https://wa.me/" + numero +
+      "?text=" + encodeURIComponent(texto);
 
     window.open(url, "_blank");
 
