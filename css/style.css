@@ -1085,3 +1085,241 @@ select {
   }
 
 }
+/* =====================================
+   PUBLICAR PROPIEDAD - ARIUS INMOBILIARIA
+   Diseño Premium - 19/11/2026
+===================================== */
+
+/* HERO DE LA PAGINA */
+
+.pagina-hero {
+  text-align: center;
+  padding: 70px 20px;
+  background:
+    linear-gradient(rgba(5, 16, 28, 0.75),
+    rgba(5, 16, 28, 0.85)),
+    url('../imagenes/hero.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.pagina-hero h1 {
+  font-size: 38px;
+  color: white;
+  max-width: 850px;
+  margin: 0 auto 20px;
+}
+
+.pagina-hero p {
+  font-size: 18px;
+  color: #d8d8d8;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.7;
+}
+
+/* SECCION DE CAPTACION */
+
+.captacion {
+  max-width: 850px;
+  margin: 60px auto;
+  padding: 40px;
+  background: #12263a;
+  border: 1px solid #29445e;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.captacion h2 {
+  text-align: center;
+  color: #d4a373;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.captacion > p {
+  text-align: center;
+  color: #d8d8d8;
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+/* FORMULARIO */
+
+.formulario-propiedad {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.formulario-propiedad label {
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.formulario-propiedad input,
+.formulario-propiedad select,
+.formulario-propiedad textarea {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 14px;
+  margin: 0;
+  background: #0b1a2a;
+  color: white;
+  border: 1px solid #39536b;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.formulario-propiedad input:focus,
+.formulario-propiedad select:focus,
+.formulario-propiedad textarea:focus {
+  border-color: #d4a373;
+  box-shadow: 0 0 8px rgba(212,163,115,0.3);
+}
+
+.formulario-propiedad textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.formulario-propiedad input::placeholder,
+.formulario-propiedad textarea::placeholder {
+  color: #9ba9b7;
+}
+
+/* BOTON ENVIAR */
+
+.formulario-propiedad button {
+  margin-top: 20px;
+  padding: 16px;
+  background: #8b5a2b;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.formulario-propiedad button:hover {
+  background: #a76b35;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* BENEFICIOS */
+
+.beneficios {
+  padding: 60px 20px;
+  text-align: center;
+  background: #0d2032;
+}
+
+.beneficios h2 {
+  color: #d4a373;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.beneficios-intro {
+  color: #d8d8d8;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+}
+
+.beneficios-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.beneficio-card {
+  background: #12263a;
+  padding: 30px 20px;
+  border: 1px solid #29445e;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.beneficio-card:hover {
+  transform: translateY(-7px);
+  border-color: #d4a373;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.beneficio-icono {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.beneficio-card h3 {
+  color: #d4a373;
+  font-size: 19px;
+}
+
+.beneficio-card p {
+  color: #d8d8d8;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+  .beneficios-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .pagina-hero {
+    padding: 55px 20px;
+  }
+
+  .pagina-hero h1 {
+    font-size: 28px;
+  }
+
+  .pagina-hero p {
+    font-size: 16px;
+  }
+
+  .captacion {
+    margin: 30px 15px;
+    padding: 25px 18px;
+  }
+
+  .captacion h2 {
+    font-size: 23px;
+  }
+
+  .beneficios {
+    padding: 45px 15px;
+  }
+
+  .beneficios h2 {
+    font-size: 24px;
+  }
+
+  .beneficios-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .formulario-propiedad button {
+    width: 100%;
+  }
+
+}
